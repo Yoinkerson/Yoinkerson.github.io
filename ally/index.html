@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body class = "background">
     <head>
         <meta name= "viewport" content="initial-scale = 1, width=device-width">
         <meta property ="og:title" content = "test title">
         <meta property ="og:description" content = "test description">
         <meta property ="og:image" content = "testimage.jpg">
         <link href="styles.css" rel=" stylesheet">
+        <script src ="scripting.js"></script>
         <title>
             test
         </title>
     </head>
-    
-    <h1>Hello World</h1>
-    <p>test folder page</p>
-    <img src="testimage.jpg">
-    <form class = "centered">
-        <input placeholder="test placeholder"> <!-- -->
-        <button> Check </button>
-    </form>
-    <br>
-    <form class = "centered">
-        <input placeholder="test placeholder"> <!-- -->
-        <button> Check </button>
-    </form>
-    <br>
-    <form class = "centered">
-        <input placeholder="test placeholder"> <!-- -->
-        <button> Check </button>
-    </form>
-    <br>
-    <form class = "centered">
-        <input placeholder="test placeholder"> <!-- -->
-        <button> Check </button>
-    </form>
-    <br>
-    <form class = "centered">
-        <input placeholder="test placeholder"> <!-- -->
-        <button> Check </button>
-    </form>
+    <div class ="centered">
+         <h1>Brandon Pop Quiz</h1>
+    <h2><p>Answer 100% to move on to the next step :D</p></h2>
+    <br class = "bigbreak">
+        <form id = "firstBlock">
+            <h3>What's my MBTI?</h3>
+            <input placeholder="Answer" type ="text" id="first"> <!-- -->
+            <button type ="submit" onclick="correct(1)" id ="firstButton" > Check </button>
+            <p id= "correct" class="startHidden"> Correct! 1 out of 5</p>
+        </form>
+        <br>
+        <form id = "secondBlock">
+            <h3>What's the name of <br>the team where I most <br>recently went to a game?</h3>
+            <input placeholder="Answer" type ="text" id="second"> <!-- -->
+
+            <button type ="submit" onclick="correct(2)" id = "secondButton"> Check </button>
+        </form>
+        <br>
+        <form id = "thirdBlock">
+            <h3>What's my favorite boba flavor?</h3>
+            <input placeholder="Answer" type ="text" id="third"> <!-- -->
+
+            <button type ="submit" onclick="correct(3)" id = "thirdButton"> Check </button>
+        </form>
+        <br>
+        <form id = "fourthBlock">
+            <h3>What's my birthday? (MM/DD)</h3>
+            <input placeholder="Answer" type ="text" id="fourth"> <!-- -->
+
+            <button type ="submit" onclick="correct(4)" id = "fourthButton"> Check </button>
+        </form>
+        <br>
+        <form id = "fifthBlock">
+            <h3>What's name of niche sport <br> I used to play?</h3>
+            <input placeholder="Answer" type ="text" id="fifth"> <!-- -->
+
+            <button type ="submit" onclick="correct(5)" id = "fifthButton"> Check </button>
+        </form>
+    </div>
 </body>
 </html>

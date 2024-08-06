@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html>
-<body class = "background">
     <head>
         <meta name= "viewport" content="initial-scale = 1, width=device-width">
         <meta property ="og:title" content = "test title">
         <meta property ="og:description" content = "test description">
         <meta property ="og:image" content = "testimage.jpg">
-        <link href="styles.css" rel=" stylesheet">
+        <link href="styles.css" rel="stylesheet">
         <script src ="scripting.js"></script>
         <title>
             test
         </title>
     </head>
+<body>
+   
     <div class ="centered">
          <h1>Brandon Pop Quiz</h1>
-    <h2><p>Answer 100% to move on to the next step :D</p></h2>
+    <h2><p>Answer 100% to move on to the next step :D</ps></h2>
     <br class = "bigbreak">
-        <form id = "firstBlock">
+        <form id = "firstBlock" onsubmit="return false">
             <h3>What's my MBTI?</h3>
-            <input placeholder="Answer" type ="text" id="first"> <!-- -->
-            <button type ="submit" onclick="correct(1)" id ="firstButton" > Check </button>
-            <p id= "correct" class="startHidden"> Correct! 1 out of 5</p>
+            <input placeholder="Answer" type ="text" id="first" name> <!-- -->
+            <button onclick="correct(1)" id ="firstButton" > Check </button>
+            <p id= "correct1" class="startHidden"> Correct! 1 out of 5</p>
         </form>
-        <br>
-        <form id = "secondBlock">
+        <form id = "secondBlock" onsubmit="return false" class="startHidden">
             <h3>What's the name of <br>the team where I most <br>recently went to a game?</h3>
             <input placeholder="Answer" type ="text" id="second"> <!-- -->
 
             <button type ="submit" onclick="correct(2)" id = "secondButton"> Check </button>
+            <p id= "correct2" class="startHidden"> Correct! 2 out of 5</p>
         </form>
         <br>
-        <form id = "thirdBlock">
+        <form id = "thirdBlock" onsubmit="return false"class="startHidden">
             <h3>What's my favorite boba flavor?</h3>
-            <input placeholder="Answer" type ="text" id="third"> <!-- -->
+            <input placeholder="Answer" type ="text" id="third" > <!-- -->
 
             <button type ="submit" onclick="correct(3)" id = "thirdButton"> Check </button>
+            <p id= "correct3" class="startHidden"> Correct! 3 out of 5</p>
         </form>
         <br>
-        <form id = "fourthBlock">
+        <form id = "fourthBlock" onsubmit="return false"class="startHidden">
             <h3>What's my birthday? (MM/DD)</h3>
-            <input placeholder="Answer" type ="text" id="fourth"> <!-- -->
+            <input placeholder="Answer" type ="text" id="fourth" > <!-- -->
 
             <button type ="submit" onclick="correct(4)" id = "fourthButton"> Check </button>
+            <p id= "correct4" class="startHidden"> Correct! 4 out of 5</p>
         </form>
         <br>
-        <form id = "fifthBlock">
+        <form id = "fifthBlock" onsubmit="return false" class="startHidden">
             <h3>What's name of niche sport <br> I used to play?</h3>
             <input placeholder="Answer" type ="text" id="fifth"> <!-- -->
 
             <button type ="submit" onclick="correct(5)" id = "fifthButton"> Check </button>
+            <p id= "correct5" class="startHidden"> Correct! 5 out of 5</p>
         </form>
     </div>
 </body>

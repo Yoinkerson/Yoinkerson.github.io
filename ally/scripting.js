@@ -22,7 +22,7 @@ function correct(whichQuestion){
             showNextBlock.classList.remove("startHidden");
         }
         else{
-           // alert("hint: its almost the opposite of urs");
+            alert("hint: its almost the opposite of urs");
         }
     }
 
@@ -82,7 +82,7 @@ function correct(whichQuestion){
         let result = input.trim();
         result = result.toLowerCase();
         if(result == "fencing"){
-            alert("All Correct :D");
+            alert("yayyy u got all of them right");
             alert("A little surprise next ;)");
             hideThisBlock = document.getElementById("fifthBlock");
             hideThisBlock.classList.add("startHidden");
